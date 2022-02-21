@@ -5,8 +5,17 @@
 }
 
 .container {
-    width: 1152px;
-    margin: auto;
+            /* width: 1152px;  */
+            width: 1000px;
+            margin: auto;
+            background-image: url(gambar/latar5.png);
+            background-repeat:no-repeat;
+            background-position:top;
+
+            /* background: rgb(6,6,88); */
+            /* background: linear-gradient(90deg, rgba(6,6,88,1) 0%, rgba(2,0,36,1) 0%, rgba(201,104,193,0.227328431372549) 0%, rgba(2,24,60,1) 100%, rgba(0,212,255,1) 100%); */
+
+
 }
 
 .menu {
@@ -24,13 +33,14 @@
 a {
     text-decoration: none;
 } 
-
+/* ------------------------------------------------ */
 a:hover {
     color: #C70039;
 } 
 
 a{
     transition: .3s;
+    color:black;
 }
 
 ul {
@@ -43,12 +53,27 @@ ul li{
     margin-top: 35px;
 }
 
+h1{
+    color: aqua;
+}
+
+h4{
+    color:#EB984E;
+}
+@media only screen and (max-width: 700px){
+    h4{
+        color: #F7DC6F;
+    }
+}
+
+
 /* MULAI HERO */
 
 .hero {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+    /* background-color:#ABEBC6 ; */ 
 }
 
 .hero-text h1, .hero-text h4 {
@@ -71,8 +96,8 @@ ul li{
 }
 
 .hero-text button {
-    font-size: 20px;
-    background-color: rgba(255, 255, 128, .5);
+    font-size: 15px;
+    background-color:#5DADE2;
     padding: 15px 15px;
     border: none;
     border-radius: 15px;
@@ -81,11 +106,13 @@ ul li{
 /* POST */
 
 .post {
-    background-color:whitesmoke;
+    /* background-color:whitesmoke;  */
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,195,253,0.3085609243697479) 41%, rgba(30,195,252,1) 100%, rgba(33,195,250,1) 100%, rgba(45,194,240,1) 100%, rgba(252,176,69,1) 100%);
     display: flex;
     flex-direction: column;
-    padding: 20px 50px;
-    margin-top: 100px;
+    padding: 20px 60px;
+    margin-top: 240px;
 }
 
 .post-head {
@@ -97,6 +124,7 @@ ul li{
     font-size: 22px;
     font-weight: 500;
     line-height: 60px;
+    color: #800080;
 }
 
 .post-head a {
@@ -108,13 +136,15 @@ ul li{
 .post-body {
     display: flex;
     gap: 20px;
-    color:blueviolet;
+    color: #0E6655;
 }
 
 .post-body-detail {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     padding: 20px 25px;
     border-radius: 10px;
+    background: rgb(86,143,171);
+    background: radial-gradient(circle, rgba(86,143,171,1) 4%, rgba(131,241,10,0.8883928571428571) 10%, rgba(63,94,251,0.5494572829131652) 27%, rgba(63,94,251,0.4290091036414566) 43%, rgba(252,70,107,0.03405112044817926) 60%, rgba(63,94,251,1) 96%, rgba(63,94,251,1) 100%);
 }
 
 .post-body-detail h2 {
@@ -131,8 +161,10 @@ ul li{
 
 /* FITUR */
 .fitur {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,195,253,0.3085609243697479) 41%, rgba(30,195,252,1) 100%, rgba(33,195,250,1) 100%, rgba(45,194,240,1) 100%, rgba(252,176,69,1) 100%);
     padding: 30px 70px;
-    margin-top: 20px; 
+    margin-top:auto; 
 }
 
 .fitur-detail {
@@ -140,7 +172,7 @@ ul li{
     gap: 15px;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 1px solid #F9E79F;
 }
 
 .fitur-detail h2 {
@@ -148,11 +180,12 @@ ul li{
     line-height: 60px;
     font-weight: bold;
     margin-bottom: 20px;
+    color:#797D7F;
 }
 
 .fitur-detail label:first-of-type {
-    background-color: #142850;
-    color: #FFFFFF;
+    background-color: #F7DC6F;
+    color:#C70039;
     font-size: 18px;
     font-weight: 600;
     padding: 5px 10px;
@@ -161,14 +194,14 @@ ul li{
 }
 
 .fitur-detail label {
-    color: #8695A4;
-    font-size: 20px;
+    color: #4A235A;
+    font-size: 25px;
 }
 
 .fitur-detail p {
     margin-top: 30px;
     font-size: 16px;
-    color: #21243D;
+    color: #7D6608;
 }
 
 /* FOOTER */
@@ -191,13 +224,29 @@ ul li{
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 600px){
+.footer{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,227,233,0) 100%);
+}
+
+
+@media only screen and (max-width: 700px){
     .container {
         width: 100%;
         margin: auto;
         padding: 0 10px;
+        background: rgb(115, 197, 142);
+        background: radial-gradient(circle, rgba(63,94,251,0.5494572829131652) 13%, rgba(252,70,107,1) 35%, rgba(63,94,251,1) 47%, rgba(252,70,107,1) 60%, rgba(63,94,251,0.4290091036414566) 78%);
     }
 
+/* coba warna tulisan saat layar 700px*/
+@media only screen and (max-width: 700px){
+    a{
+        color: #186A3B;
+    }
+}
+
+/* batas coba */
     .hero {
         display: flex;
         flex-direction: column-reverse;
@@ -240,3 +289,7 @@ ul li{
         justify-content: center;
     }
 }
+
+
+     
+     
